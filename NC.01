@@ -1,0 +1,148 @@
+vovproject enable licmon
+
+Vwi=GUI
+Vw=CLI
+Fireshare=priority
+
+
+NC RUN
+
+• nc run -C gen -- sleep 1000
+• Nc run set e1 (for specific projects)
+• Nc wait   (untill job finished)
+• Nc wait e1
+• Nc run at "tomorrow 6am"
+• Wait -w
+• -wl show logs   for example    nc run -wl -- date = show logs from running job
+• Nc tail -f  show lasts logs
+• Nc run -p = priority for the user only
+• Interactive -in -ix    
+                     shell
+• Nc run   -l > logfile
+
+• Manage Slots
+
+Ssh nc-srv01
+
+vovproject enable vnc
+
+	vovslavemgr configure -capacity 20 lx004
+
+
+Cd  /tools/altair/vnc/vnc.swd   
+   347  19:11   vi slaves.tcl
+   349  19:12   vi slaveClass.table
+
+
+
+   
+  
+   356  19:27   nc cmd vovslavemgr start lx00
+   357  19:28   nc cmd vovslavemgr show -down
+   358  19:28   nc hosts
+   359  20:01   history
+[cad@n-nis /home]$
+
+Xhost +
+
+LOGS
+/tools/altr/vnc/vnc.swd/logs/  slaves
+
+Setenv LOG_DIR
+Nc get logfile " "
+Check for aws issues  8787
+Config.tcl 20-30
+
+NC Summary
+
+nc sum -b
+
+veprestore
+
+NC FORGET
+nc forget -mine
+
+KEY
+
+Cd /tools/altair/***
+Vi license.key
+
+
+Check in web if cahnged
+
+NC HOST Logs
+nc host -r
+
+AWS
+Check for aws issues  8787
+Config.tcl 20-30
+aws configuration in la config.tcl
+cd   la/rsaws.swd/vovec2d
+Check connection - vov_ec2_scaling -i c5.xlarge -v
+idlle for 1min
+bootstrap nc boot on aws instance
+
+nc run -r Spot InstanceType:r5.2xlarge -- sleep 10
+
+
+vovproject
+
+cd /tools/altr/vnc/vnc.swd/
+
+cd /tools/altr/vnc/vnc.swd/jobclass/
+
+
+vi high.tcl
+
+
+
+vi checkin_regression.tcl
+
+
+
+vovproject reread
+
+
+vovproject senity
+
+vi slaveClass.table
+
+
+nv hosts
+
+
+vi slaveClass.table
+
+
+
+vovproject reread
+
+vovproject sanity
+
+
+vovproject list
+
+
+#### check job###      nc run -C checkin_regression -- sleep 100
+
+nc info 001201969    ### job info
+
+lx011 licmon@nc-srv01 DEFAULT local/cloud_usage > ./ftlm_report_slot_consumption.csh -interval 202207 -hourlyprice 0.07 -baseline 90
+./ftlm_report_slot_consumption.csh -interval 20220601-20220731 -hourlyprice 0.07 -baseline 90
+
+vsi
+
+
+
+
+ nc gui
+
+Price
+./ftlm_report_slot_consumption.csh -interval 20220701-20220821 -hourlyprice 0.07 -baseline 90
+
+NC List
+nc list -L
+nc get
+
+
+A
